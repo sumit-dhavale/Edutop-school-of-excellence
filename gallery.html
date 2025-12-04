@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://www.google.com;">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta property="og:title" content="Gallery - Edutop School of Excellence">
+    <meta property="og:description" content="Explore our school gallery showcasing academic events, sports activities, and modern infrastructure">
+    <title>Gallery - Edutop School of Excellence</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9c74QaoCR/hcCauyhzfm/opbCC2d+iwc+YLlU43Ct9lsP4VU0+PQD7+xAGBJMP4pTx4R6Ghg2BUwvEHaSKTClTw==" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images\logo.jpg" alt="School Logo">
+                <h2 data-editable="true">Edutop School of Excellence</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Header -->
+    <section class="gallery-header">
+        <div class="container">
+            <h1 data-editable="true">School Gallery</h1>
+            <p data-editable="true">Capturing moments of learning, growth, and achievement</p>
+        </div>
+    </section>
+
+    <!-- Gallery Categories -->
+    <section class="gallery-categories">
+        <div class="container">
+            <div class="category-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="academic">Academic Events</button>
+                <button class="filter-btn" data-filter="sports">Sports</button>
+                <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+                <button class="filter-btn" data-filter="cultural">Cultural Events</button>
+                <button class="filter-btn" data-filter="yoga">Yoga Event</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-grid">
+        <div class="container">
+            <div class="gallery-container">
+                <!-- Academic Events -->
+                <div class="gallery-item academic">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=300&fit=crop" alt="Science Fair">
+                    <div class="overlay">
+                        <h3 data-editable="true">Annual Science Fair</h3>
+                        <p data-editable="true">Students showcasing innovative projects</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item academic">
+                    <img src="https://images.unsplash.com/photo-1581726690015-c9861fa5057f?w=400&h=300&fit=crop" alt="Classroom">
+                    <div class="overlay">
+                        <h3 data-editable="true">Interactive Learning</h3>
+                        <p data-editable="true">Smart classroom sessions</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item academic">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=300&fit=crop" alt="Reading Session">
+                    <div class="overlay">
+                        <h3 data-editable="true">Reading Program</h3>
+                        <p data-editable="true">Encouraging love for books</p>
+                    </div>
+                </div>
+
+                <!-- Sports -->
+                <div class="gallery-item sports">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop" alt="Basketball">
+                    <div class="overlay">
+                        <h3 data-editable="true">Basketball Tournament</h3>
+                        <p data-editable="true">Inter-house sports competition</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item sports">
+                    <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=400&h=300&fit=crop" alt="Running Track">
+                    <div class="overlay">
+                        <h3 data-editable="true">Annual Sports Day</h3>
+                        <p data-editable="true">Track and field events</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item sports">
+                    <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=400&h=300&fit=crop" alt="Swimming">
+                    <div class="overlay">
+                        <h3 data-editable="true">Swimming Competition</h3>
+                        <p data-editable="true">State-level championships</p>
+                    </div>
+                </div>
+
+                <!-- Infrastructure -->
+                <div class="gallery-item infrastructure">
+                    <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=400&h=300&fit=crop" alt="Library">
+                    <div class="overlay">
+                        <h3 data-editable="true">Modern Library</h3>
+                        <p data-editable="true">Extensive collection of books and digital resources</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item infrastructure">
+                    <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=400&h=300&fit=crop" alt="Laboratory">
+                    <div class="overlay">
+                        <h3 data-editable="true">Science Laboratory</h3>
+                        <p data-editable="true">Well-equipped labs for practical learning</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item infrastructure">
+                    <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=400&h=300&fit=crop" alt="Computer Lab">
+                    <div class="overlay">
+                        <h3 data-editable="true">Computer Laboratory</h3>
+                        <p data-editable="true">Latest technology for digital learning</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item infrastructure">
+                    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=400&h=300&fit=crop" alt="Auditorium">
+                    <div class="overlay">
+                        <h3 data-editable="true">School Auditorium</h3>
+                        <p data-editable="true">Venue for assemblies and cultural programs</p>
+                    </div>
+                </div>
+
+                <!-- Cultural Events -->
+                <div class="gallery-item cultural">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop" alt="Dance Performance">
+                    <div class="overlay">
+                        <h3 data-editable="true">Cultural Festival</h3>
+                        <p data-editable="true">Students performing traditional dance</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item cultural">
+                    <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=400&h=300&fit=crop" alt="Music Concert">
+                    <div class="overlay">
+                        <h3 data-editable="true">Music Concert</h3>
+                        <p data-editable="true">Annual music and arts showcase</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item cultural">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop" alt="Drama Performance">
+                    <div class="overlay">
+                        <h3 data-editable="true">Drama Performance</h3>
+                        <p data-editable="true">Students showcasing theatrical talents</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item academic">
+                    <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=400&h=300&fit=crop" alt="Graduation">
+                    <div class="overlay">
+                        <h3 data-editable="true">Graduation Ceremony</h3>
+                        <p data-editable="true">Celebrating academic achievements</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item infrastructure">
+                    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=400&h=300&fit=crop" alt="Playground">
+                    <div class="overlay">
+                        <h3 data-editable="true">School Playground</h3>
+                        <p data-editable="true">Spacious grounds for outdoor activities</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item sports">
+                    <img src="https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=400&h=300&fit=crop" alt="Cricket">
+                    <div class="overlay">
+                        <h3 data-editable="true">Cricket Match</h3>
+                        <p data-editable="true">Inter-school cricket tournament</p>
+                    </div>
+                </div>
+
+                <!-- Yoga Event Photos -->
+                <div class="gallery-item yoga">
+                    <img src="images\IMG-20251003-WA0026.jpg" alt="Yoga Event 1" loading="lazy">
+                    <div class="overlay">
+                        <h3>Yoga Event</h3>
+                        <p>Students practicing yoga outdoors</p>
+                    </div>
+                </div>
+                <div class="gallery-item yoga">
+                    <img src="images\IMG-20251003-WA0022.jpg" alt="Yoga Event 2" loading="lazy">
+                    <div class="overlay">
+                        <h3>Yoga Event</h3>
+                        <p>Group yoga session with instructor</p>
+                    </div>
+                </div>
+                <div class="gallery-item yoga">
+                    <img src="images\IMG-20251003-WA0024.jpg" alt="Yoga Event 3" loading="lazy">
+                    <div class="overlay">
+                        <h3>Yoga Event</h3>
+                        <p>Students meditating in the school courtyard</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievement Stats -->
+    <section class="achievements">
+        <div class="container">
+            <h2 data-editable="true">Our Achievements</h2>
+            <div class="achievement-grid">
+                <div class="achievement-item">
+                    <i class="fas fa-trophy"></i>
+                    <h3 data-editable="true">50+</h3>
+                    <p data-editable="true">Sports Trophies</p>
+                </div>
+                <div class="achievement-item">
+                    <i class="fas fa-medal"></i>
+                    <h3 data-editable="true">25+</h3>
+                    <p data-editable="true">Academic Awards</p>
+                </div>
+                <div class="achievement-item">
+                    <i class="fas fa-star"></i>
+                    <h3 data-editable="true">95%</h3>
+                    <p data-editable="true">Board Results</p>
+                </div>
+                <div class="achievement-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3 data-editable="true">1000+</h3>
+                    <p data-editable="true">Alumni Success</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-editable="true">Edutop School of Excellence</h3>
+                    <p data-editable="true">Excellence in Education Since 1985</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 data-editable="true">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                        <li><a href="enquiry.html">Enquiry</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-editable="true">Contact Info</h4>
+                    <p data-editable="true"><i class="fas fa-map-marker-alt"></i> 123 Education Street, Learning City, LC 12345</p>
+                    <p data-editable="true"><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p data-editable="true"><i class="fas fa-envelope"></i> info@edutopschool.edu</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-editable="true">&copy; 2024 Edutop School of Excellence. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Expanded Image">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

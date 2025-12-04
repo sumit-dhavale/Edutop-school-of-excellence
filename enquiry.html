@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Enquiry - Edutop School of Excellence">
+    <meta property="og:description" content="Submit your enquiry and get information about Edutop School of Excellence. Find our location, contact details, and admission information including fee structure">
+    <title>Enquiry - Edutop School of Excellence</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="enquiry.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images\logo.jpg" alt="School Logo">
+                <h2 data-editable="true">Edutop School of Excellence</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="enquiry.html" class="active">Enquiry</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Enquiry Header -->
+    <section class="contact-header">
+        <div class="container">
+            <h1 data-editable="true">Enquiry</h1>
+            <p data-editable="true">We're here to help and answer any questions you might have</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3 data-editable="true">Visit Us</h3>
+                        <p data-editable="true">123 Education Street<br>Learning City, LC 12345<br>India</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3 data-editable="true">Call Us</h3>
+                        <p data-editable="true">Main Office: +91 98765 43210<br>Admissions: +91 98765 43211<br>Helpline: +91 98765 43212</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3 data-editable="true">Email Us</h3>
+                        <p data-editable="true">info@edutopschool.edu<br>admissions@edutopschool.edu<br>principal@edutopschool.edu</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3 data-editable="true">Office Hours</h3>
+                        <p data-editable="true">Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday: 9:00 AM - 2:00 PM<br>Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2 data-editable="true">Submit Enquiry</h2>
+                    <p data-editable="true">Have a question or need more information? Send us a message and we'll get back to you as soon as possible.</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="admission">Admission Inquiry</option>
+                                <option value="academic">Academic Information</option>
+                                <option value="transport">Transportation</option>
+                                <option value="fees">Fee Structure</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Please provide details about your inquiry..."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- School Map -->
+                <div class="map-container">
+                    <h2 data-editable="true">Find Us</h2>
+                    <div class="map-wrapper">
+                        <div class="map-placeholder">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <h3 data-editable="true">Interactive School Map</h3>
+                            <p data-editable="true">Located in the heart of Learning City</p>
+                            <div class="map-details">
+                                <p data-editable="true"><strong>Address:</strong> 123 Education Street, Learning City, LC 12345</p>
+                                <p data-editable="true"><strong>Landmarks:</strong> Near City Library and Community Park</p>
+                                <p data-editable="true"><strong>Public Transport:</strong> Bus stops 15A, 22B nearby</p>
+                            </div>
+                            <!-- Embedded Google Map -->
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m12!1m3!1d3024.123456789!2d-74.00599!3d40.7127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ1LjciTiA3NMKwMDAnMjEuNiJX!5e0!3m2!1sen!2sus!4v1234567890"
+                                width="100%" 
+                                height="300" 
+                                style="border:0; border-radius: 10px; margin-top: 1rem;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links Section -->
+    <section class="quick-links">
+        <div class="container">
+            <h2 data-editable="true">Quick Information</h2>
+            <div class="links-grid">
+                <div class="link-card">
+                    <i class="fas fa-user-graduate"></i>
+                    <h3 data-editable="true">Admissions</h3>
+                    <p data-editable="true">Learn about our admission process, requirements, and application deadlines.</p>
+                    <a href="#" class="link-btn">Learn More</a>
+                </div>
+
+                <div class="link-card">
+                    <i class="fas fa-rupee-sign"></i>
+                    <h3 data-editable="true">Fee Structure</h3>
+                    <p data-editable="true">Detailed information about tuition fees, payment plans, and scholarship opportunities.</p>
+                    <a href="#fee-structure" class="link-btn">View Details</a>
+                </div>
+
+                <div class="link-card">
+                    <i class="fas fa-bus"></i>
+                    <h3 data-editable="true">Transportation</h3>
+                    <p data-editable="true">School bus routes, timings, and transportation fee information for students.</p>
+                    <a href="#" class="link-btn">Bus Routes</a>
+                </div>
+
+                <div class="link-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3 data-editable="true">Academic Calendar</h3>
+                    <p data-editable="true">Important dates, holidays, examination schedules, and school events calendar.</p>
+                    <a href="#" class="link-btn">View Calendar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+      Fee Structure Section
+=========================== -->
+<section id="fee-structure" class="fee-structure">
+  <div class="container">
+    <h2 class="section-title">Fee Structure 2024–25</h2>
+    <p class="subtitle">Quality education with affordable learning for every child</p>
+
+    <div class="fee-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>Tuition Fee (₹)</th>
+          </tr>
+        </thead>
+    <tbody>
+      <tr>
+        <td>Nursery</td>
+        <td>11,000</td>
+      </tr>
+      <tr>
+        <td>LKG</td>
+        <td>12,000</td>
+      </tr>
+      <tr>
+        <td>UKG</td>
+        <td>13,000</td>
+      </tr>
+      <tr>
+        <td>1st STD to V STD</td>
+        <td>15,000</td>
+      </tr>
+      <tr>
+        <td>VI to VIII</td>
+        <td>16,000</td>
+      </tr>
+      <tr>
+        <td>IX to X</td>
+        <td>17,000</td>
+      </tr>
+    </tbody>
+      </table>
+    </div>
+
+    <div class="fee-info">
+      <div class="info-card">
+        <i class="fa-solid fa-book-open"></i>
+        <h3>Books & Stationery</h3>
+        <p>Charged separately at the beginning of the academic year as per requirement.</p>
+      </div>
+      <div class="info-card">
+        <i class="fa-solid fa-bus"></i>
+        <h3>Transport Facility</h3>
+        <p>Optional bus service available on major routes with nominal additional charges.</p>
+      </div>
+      <div class="info-card">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <h3>Scholarships</h3>
+        <p>Merit-based scholarships available for top-performing and needy students.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Departments Contact -->
+    <section class="departments-contact">
+        <div class="container">
+            <h2 data-editable="true">Department Contacts</h2>
+            <div class="departments-grid">
+                <div class="dept-card">
+                    <h3 data-editable="true">Principal's Office</h3>
+                    <p><i class="fas fa-user"></i> Dr. Rajesh Kumar</p>
+                    <p><i class="fas fa-envelope"></i> principal@edutopschool.edu</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                </div>
+
+                <div class="dept-card">
+                    <h3 data-editable="true">Admissions Office</h3>
+                    <p><i class="fas fa-user"></i> Mrs. Priya Sharma</p>
+                    <p><i class="fas fa-envelope"></i> admissions@edutopschool.edu</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43211</p>
+                </div>
+
+                <div class="dept-card">
+                    <h3 data-editable="true">Academic Office</h3>
+                    <p><i class="fas fa-user"></i> Mr. Suresh Gupta</p>
+                    <p><i class="fas fa-envelope"></i> academics@edutopschool.edu</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43213</p>
+                </div>
+
+                <div class="dept-card">
+                    <h3 data-editable="true">Finance Office</h3>
+                    <p><i class="fas fa-user"></i> Mrs. Sunita Agarwal</p>
+                    <p><i class="fas fa-envelope"></i> finance@edutopschool.edu</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43214</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-editable="true">Edutop School of Excellence</h3>
+                    <p data-editable="true">Excellence in Education Since 1985</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 data-editable="true">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                        <li><a href="enquiry.html">Enquiry</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-editable="true">Contact Info</h4>
+                    <p data-editable="true"><i class="fas fa-map-marker-alt"></i> 123 Education Street, Learning City, LC 12345</p>
+                    <p data-editable="true"><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p data-editable="true"><i class="fas fa-envelope"></i> info@edutopschool.edu</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-editable="true">&copy; 2024 Edutop School of Excellence. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

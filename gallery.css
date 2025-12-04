@@ -1,0 +1,433 @@
+/* Gallery Specific Styles */
+
+.gallery-header {
+    background: linear-gradient(rgba(44, 90, 160, 0.8), rgba(30, 58, 138, 0.8)), 
+                url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1920&h=600&fit=crop') center/cover;
+    color: white;
+    text-align: center;
+    padding: 150px 0 80px;
+    margin-top: 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Parallax effect for gallery header */
+.gallery-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    transform: translateZ(0);
+}
+
+/* Yoga category button */
+.filter-btn[data-filter="yoga"] {
+    border-color: #ff6b35;
+    color: #ff6b35;
+}
+
+.filter-btn[data-filter="yoga"]:hover,
+.filter-btn[data-filter="yoga"].active {
+    background: #ff6b35;
+    color: white;
+    box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Yoga gallery items */
+.gallery-item.yoga {
+    border: 3px solid #ff6b35;
+    box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+}
+
+/* Lightbox Modal Styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
+    animation: zoomIn 0.6s ease;
+}
+
+@keyframes zoomIn {
+    from {transform: scale(0.7);}
+    to {transform: scale(1);}
+}
+
+.lightbox-caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    font-size: 1.2rem;
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 30px;
+    right: 45px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.lightbox .close:hover,
+.lightbox .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.lightbox .prev,
+.lightbox .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    user-select: none;
+    transition: color 0.3s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.lightbox .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.lightbox .prev:hover,
+.lightbox .next:hover {
+    color: #ff6b35;
+}
+
+/* Staggered animation for gallery items */
+.gallery-item {
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.gallery-item:nth-child(odd) {
+    animation-delay: 0.2s;
+}
+
+.gallery-item:nth-child(even) {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Advanced hover effect with 3D transform */
+.gallery-item:hover {
+    transform: translateY(-15px) scale(1.05) rotateX(5deg);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.15);
+    filter: brightness(1.1);
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .gallery-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .gallery-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .category-filters {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-btn {
+        width: 200px;
+    }
+    
+    .achievement-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-header {
+        padding: 120px 0 60px;
+    }
+    
+    .gallery-header h1 {
+        font-size: 2rem;
+    }
+    
+    .achievement-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .overlay {
+        padding: 1.5rem;
+    }
+}
+
+.gallery-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.gallery-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.gallery-categories {
+    padding: 50px 0;
+    background: #f8f9fa;
+}
+
+.category-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.filter-btn {
+    background: white;
+    border: 2px solid #2c5aa0;
+    color: #2c5aa0;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #2c5aa0;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(44, 90, 160, 0.3);
+}
+
+.gallery-grid {
+    padding: 80px 0;
+    background: white;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
+    padding: 2rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+    transform: translateY(0);
+}
+
+.overlay h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.overlay p {
+    opacity: 0.9;
+    font-size: 0.95rem;
+}
+
+/* Filter Animation */
+.gallery-item {
+    animation: fadeIn 0.5s ease;
+}
+
+.gallery-item.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Achievements Section */
+.achievements {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+    color: white;
+}
+
+.achievements h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.achievement-item {
+    text-align: center;
+    background: rgba(255,255,255,0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease;
+}
+
+.achievement-item:hover {
+    transform: translateY(-10px);
+}
+
+.achievement-item i {
+    font-size: 3rem;
+    color: #ffd700;
+    margin-bottom: 1rem;
+}
+
+.achievement-item h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.achievement-item p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Active navigation link */
+.nav-menu a.active {
+    color: #2c5aa0;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .gallery-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .category-filters {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-btn {
+        width: 200px;
+    }
+    
+    .achievement-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-header {
+        padding: 120px 0 60px;
+    }
+    
+    .gallery-header h1 {
+        font-size: 2rem;
+    }
+    
+    .achievement-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .overlay {
+        padding: 1.5rem;
+    }
+}
